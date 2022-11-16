@@ -5,7 +5,8 @@
 body {
   font-family: Times New Roman,Courier New, Arial;
   padding: 20px;
-  background: lightgrey;
+  background-image: url('images/birds.jpeg');
+  background-repeat: repeat;
 }
 
 /* Header/Blog Title */
@@ -14,10 +15,10 @@ body {
   font-size: 60px;
   font-family: Times New Roman;
   text-align: center;
-  background-color: rgba(255,255,255,.5);
+  background-color: rgba(255,255,255,.95);
   border-radius: 30px;
   color: #00000;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
   width: 90%;
   margin: auto;
 }
@@ -30,7 +31,8 @@ body {
 
 /* Add a card effect for articles */
 .card {
-  background-color: rgba(255,255,255,.4);
+  background-color: rgba(255,255,255,.9);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
   padding: 15px;
   margin-top: 20px;
   border-radius: 30px;
