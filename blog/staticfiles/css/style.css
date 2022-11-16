@@ -5,7 +5,7 @@
 body {
   font-family: Times New Roman,Courier New, Arial;
   padding: 20px;
-  background: linear-gradient(90deg, rgba(170,219,241,0.7945772058823529) 0%, rgba(6,127,233,0.6433167016806722) 49%, rgba(35,87,154,1) 100%);
+  background: lightgrey;
 }
 
 /* Header/Blog Title */
@@ -14,20 +14,23 @@ body {
   font-size: 60px;
   font-family: Times New Roman;
   text-align: center;
-  background-color: rgba(255,255,255,.4);
+  background-color: rgba(255,255,255,.5);
   border-radius: 30px;
   color: #00000;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  width: 90%;
+  margin: auto;
 }
 
 /* Left column */
 .leftcolumn {
-  float: left;
-  width: 100%;
+  width: 90%;
+  margin: auto;
 }
 
 /* Add a card effect for articles */
 .card {
-  background-color: rgba(255,255,255,.3);
+  background-color: rgba(255,255,255,.4);
   padding: 15px;
   margin-top: 20px;
   border-radius: 30px;
@@ -43,7 +46,50 @@ body {
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
   .leftcolumn {
-    width: 100%;
+    width: 90%;
     padding: 0;
+  }
+}
+
+/*-- Sign Styles --*/
+
+.sign {
+  text-decoration: none;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  margin: 20px;
+}
+.sign span {
+    font-size: 5.6rem;
+    text-align: center;
+    line-height: 1;
+    color: #c6e2ff;
+    animation: neon .08s ease-in-out infinite alternate;
+  }
+
+/*-- Animation Keyframes --*/
+
+@keyframes neon {
+  from {
+    text-shadow:
+    0 0 6px rgba(202,228,225,0.92),
+    0 0 30px rgba(202,228,225,0.34),
+    0 0 12px rgba(30,132,242,0.52),
+    0 0 21px rgba(30,132,242,0.92),
+    0 0 34px rgba(30,132,242,0.78),
+    0 0 54px rgba(30,132,242,0.92);
+  }
+  to {
+    text-shadow:
+    0 0 6px rgba(202,228,225,0.98),
+    0 0 30px rgba(202,228,225,0.42),
+    0 0 12px rgba(30,132,242,0.58),
+    0 0 22px rgba(30,132,242,0.84),
+    0 0 38px rgba(30,132,242,0.88),
+    0 0 60px rgba(30,132,242,1);
   }
 }
