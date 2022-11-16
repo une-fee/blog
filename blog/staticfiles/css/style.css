@@ -23,6 +23,10 @@ body {
   margin: auto;
 }
 
+.header:hover {
+  background-color: rgba(255,255,255,1);
+}
+
 /* Left column */
 .leftcolumn {
   width: 90%;
@@ -36,6 +40,10 @@ body {
   padding: 15px;
   margin-top: 20px;
   border-radius: 30px;
+}
+
+.card:hover {
+  background-color: rgba(255,255,255, 0.95);
 }
 
 /* Clear floats after the columns */
@@ -53,7 +61,7 @@ body {
   }
 }
 
-/*-- Sign Styles --*/
+/*-- Header Neon Styles --*/
 
 .sign {
   text-decoration: none;
